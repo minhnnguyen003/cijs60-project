@@ -1,13 +1,16 @@
 .game-container {
     margin-top: 3%;
-    height: 200px;
-    width: 300px;
+    height: 135px;
+    width: 180px;
     
 }
 
 .game-container .game-img {
     background: url('../games/2048/gameplay.gif');
-    width: 100%;
+    width: 180px;
+    height: 135px;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 180px 135px;
+    display: inline-block;
 }
+

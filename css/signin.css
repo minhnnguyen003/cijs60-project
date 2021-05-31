@@ -1,8 +1,3 @@
-body {
-    background: url(../img/RE4wtc3.jpg);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-}
-
 #form {
     display: flexbox;
     margin: auto;
