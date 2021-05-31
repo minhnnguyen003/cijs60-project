@@ -1,0 +1,75 @@
+.container .content {
+    display: flex;
+    justify-content: space-between;
+    margin: 24px 0px 0px 0px;
+    height: 500px;
+    width: 100%;
+}
+
+.container .content .news-block{
+    width: 47%;
+    height: 400px;
+}
+
+.container .content .news-block .block-thumbnail {
+    margin: auto;
+    width: 100%;
+    height: 250px;
+    background: url('../news/lenovo-go-ra-mat-san-pham-moi/1.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container .content .news-block .title {
+    color: #03182D;
+    font-size: 13.5pt;
+    font-weight: 500;
+    margin-bottom: .5rem;
+    
+}
+
+.container .content .news-list{
+    width: 51%;
+    height: 400px;
+}
+
+.container .content .news-list .news {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.container .content .news-list .news .news-image {
+    height: 63px;
+    width: 106px;
+    background: url('../news/su-troi-day-cua-covid-19-tai-dai-loan-lam-tsmc-hoang-loan/1.jpg');
+    background-size: 100% 63px;
+}
+
+.container .content .news-list .news .news-info {
+    width: 75%;
+    margin-left: 10px;
+}
+
+.margin-top-15 {
+    margin-top: 15px;
+}
+
+hr {
+    width: 95%;
+    margin: auto;
+    color: #EFF0F4;
+    max-height: 0;
+    font-size: 1px;
+    line-height: 0;
+    clear: both;
+    border: none;
+    border-top: 1px solid #aaaaaa;
+    border-bottom: 1px solid #ffffff;
+}

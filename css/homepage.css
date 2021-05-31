@@ -1,0 +1,30 @@
+.container {
+    width: 80%;
+    height: 400px;
+    display: flex;
+    box-sizing: content-box;
+    justify-content: space-between;
+    margin: 0px auto 50px auto;
+    
+}
+
+.big {
+    width: 66%;
+    display: block;
+}
+
+.small {
+    width: 32%;
+    display: block;
+}
+
+.section-name {
+    background: url('../img/name-sect.png');
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    font-size: 28px;
+    font-weight: 700;
+    color: #000A5A;
+    position: relative;
+    padding: 0px 0px 2px 9px;
+}

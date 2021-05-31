@@ -1,0 +1,26 @@
+@import url('./navbar.css');
+@import url('./homepage.css');
+@import url('./game-container.css');
+@import url('./games.css');
+@import url('./headlines.css');
+@import url('./news.css');
+@import url('./signin.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-family: iCielQuarion,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,Helvetica Neue,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji; */
+}
+
+.full-width {
+    width: 100% !important;
+}
+
+.main {
+    position: absolute;
+    margin: 70px 0px 0px 0px !important;
+    width: 100%;
+    z-index: -1;
+}
+

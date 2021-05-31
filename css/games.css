@@ -1,0 +1,102 @@
+.introduction {
+    width: 85%;
+    height: 500px;
+    /* background: linear-gradient(#f4f4f4, #f2f2f2); */
+    background: #F3F3F3;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.introduction .text {
+    display: block;
+    width: 45%;
+    align-items: center;
+    text-align: left;
+    margin-left: 10%;
+}
+
+.introduction .text .title {
+    font-size: 34px;
+    font-weight: 600;
+    color: #000A5A;
+}
+
+.introduction .text .subtitle {
+    width: 60%;
+    font-size: 12px;
+    text-align: left;
+    font-style: italic;
+}
+
+.introduction .img {
+    background: url('../games/intro.gif');
+    width: 40%;
+    height: 350px;
+    background-size: 100%;
+}
+
+.introduction .vid {
+    width: 40%;
+    height: max-content;
+}
+
+.introduction .text .title {
+    font-size: 36px;
+    display: block;
+    margin-bottom: 3%;
+}
+.introduction .text .title:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background-color: #e74c3c; */
+    /* background-color: #0078D7; */
+    background-color: #FFFFFF;
+    transition: width .5s ease-out;
+    width: 0;
+    z-index: -1;
+    height: 48px;
+}
+
+.introduction .text .title:hover:before {
+    width: 60%;
+}
+
+.introduction a {
+    display: block;
+    padding: 2% 0px 0px 0px;
+}
+
+.introduction .btn-upload::after {
+    font-size: 20px;
+    content: "»";
+    position: relative;
+    margin-left: 10px;
+    right: 0;
+    height: 3px;
+    color: #005DA6;
+    transition: .5s ease-out;
+}
+
+.introduction .btn-upload:hover {
+    text-decoration: underline;
+    /* background: #FFFFFF;
+    width: max-content; */
+}
+
+.introduction .btn-upload:hover:after {
+    right: -8px;
+    
+}
+
+.introduction .btn-upload .btn-arrow {
+    margin-left: 10px;
+}
+

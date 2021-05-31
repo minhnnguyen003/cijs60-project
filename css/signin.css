@@ -1,0 +1,113 @@
+body {
+    background: url(../img/RE4wtc3.jpg);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+#form {
+    display: flexbox;
+    margin: auto;
+    background: #ffffff;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+    height: 400px;
+}
+
+#words {
+    text-align: center;
+    margin-top: 30%;
+    margin-bottom: 3%;
+    padding-top: 5%;
+    font-size: 36px;
+}
+
+#alternative {
+    display: flex;
+    max-width: 75%;
+    justify-content: space-between;
+    padding-top: 5%;
+    margin: auto;
+    
+}
+
+.signInUsingOtherPlatform {
+    height: 45px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: 3px #D4D4D4;
+}
+
+#fb {
+    border-radius: 5px;
+    background: #3C579E;
+    color: #ffffff;
+}
+
+#gg {
+    border-radius: 5px;
+    background: #ffffff;
+    color: #000000;
+}
+
+.icn {
+    width: 25px;
+    height: 25px;
+    margin-right: 5%;
+}
+
+#typebox {
+    margin-top: 5%;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+}
+
+.box {
+    max-width: 75%;
+    margin: auto;
+    font-size: 16px;
+}
+
+.inp {
+    font-size: 25px;
+    border-radius: 10px;
+    padding-top: 3%;
+    background: #F7F7F7;
+    width: 430px;
+}
+
+#forget {
+    color: #636363;
+    font-size: 12px;
+}
+
+#submit {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 7%;
+    padding-right: 5%;
+    margin-bottom: 1%;
+}
+
+.btn_submit {
+    background: #333333;
+    border-radius: 10px;
+    width: 100%;
+    height: 46px;
+    font-size: 16px; 
+    color: #F7F7F7;
+}
+
+#reg {
+    text-align: center;
+    color: #636363;
+    font-size: 12px;
+}
