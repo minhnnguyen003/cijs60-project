@@ -9,6 +9,7 @@ export default class CommentBox extends HTMLElement {
         super();
         this.appendChild($template.content.cloneNode(true));
     };
+    
 };
 
 window.customElements.define('comment-box', CommentBox);
