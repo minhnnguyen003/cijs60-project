@@ -8,38 +8,10 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body style="background: url('./img/RE4wtc3.jpg');">
-    <nav-bar></nav-bar>
-    <div id="form">
-        <div id="words">Sign In With</div>
-        <div id="alternative">
-            <button class="signInUsingOtherPlatform" id="fb" onclick="location.href='https://facebook.com'">
-                <img src="./img/facebook-logo-png-38362-Windows.ico" alt="" class="icn">
-                Facebook
-            </button>
-            <button class="signInUsingOtherPlatform" id="gg" onclick="location.href='https://google.com.vn'">
-                <img src="./img/2google.svg" alt="" class="icn">
-                Google
-            </button>
-        </div>
-        <div id="typebox">
-            <div class="box">
-                Username<br>
-                <input type="text" id="username" class="inp">
-            </div>
-            <div class="box">
-                Password <a href="" id="forget">Forgot?</a><br>
-                <input type="password" id="pass" class="inp">
-            </div>
-        </div>
-        <div id="submit">
-            <button class="btn_submit" id="btn-submit">Sign In</button>
-        </div>
-        <div id="reg">
-            Not a member? <a href="">Sign Up now</a>
-        </div>
-    </div>
 
-    <script src="./js/app.js"></script>
+    <auth-screen></auth-screen>
+
+    <script src="./js/app.js" type='module'></script>
     <!-- <script src="./js/module/signin.js"></script> -->
 </body>
 </html>
