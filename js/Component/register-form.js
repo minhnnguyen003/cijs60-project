@@ -1,3 +1,5 @@
+import {register} from "../user.js"
+
 const $template = document.createElement('template')
 $template.innerHTML = `
         <form class="register-form" action="/">
@@ -52,7 +54,7 @@ export default class RegisterForm extends HTMLElement{
                 email : this.$email.value,
                 password : this.$password.value
                 }
-                //register(data.name, data.email, data.password)
+                register(data.name, data.email, data.password)
             }
         }
     }

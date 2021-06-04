@@ -1,3 +1,5 @@
+import {login} from "../user.js"
+
 const $template = document.createElement('template')
 $template.innerHTML = `
         <form class="login-form" action="/">
@@ -17,6 +19,7 @@ export default class LoginForm extends HTMLElement{
         this.$loginForm = this.querySelector('.login-form')
         this.$email = this.querySelector('.email')
         this.$password = this.querySelector('.password')
+        this.$toRegisterBtn = this.querySelector('.to-register')
     }
 
     connectedCallback(){
@@ -37,8 +40,13 @@ export default class LoginForm extends HTMLElement{
                 email : this.$email.value,
                 password : this.$password.value
                 }
-                //login(data.email, data.password)
+                login(data.email, data.password)
             }
+        }
+
+        this.$toRegisterBtn.onclick = async () => {
+            alert("hello")
+            window.location="http://127.0.0.1:5500/register.html"
         }
     }
 }
