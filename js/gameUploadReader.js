@@ -34,7 +34,7 @@ $fileUploadbutton.addEventListener('change', function () {
     
         //Upload File
         let task = storageRef.put(file);
-        // console.log(file.webkitRelativePath);
+        console.log(file.webkitRelativePath);
             //Update progress bar
         task.on('stage changed', 
 
