@@ -5,16 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Upload game của bạn</title>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <nav-bar></nav-bar>
 
     <section class="main">
-        <div class="container">
-            <input type="file" name="game-folder" id="folder-picker" webkitdirectory multiple>
+        <div class="container" style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
+            <div class="game-properties">
+                <h6>Enter your game name</h6>
+                <input type="text" id="game-name" name="game-name">
+            </div>
+                <progress value="0" max="100" id="uploader" class="game-uploader">0%</progress>
+                <input type="file" name="game-folder" id="folder-picker" class="game-uploader" webkitdirectory multiple>
         </div>
     </section>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-storage.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyDkZSoFiw1bQYN4Nx7NXfg8Ln12T-AI6F4",
+            authDomain: "ci60-83c0d.firebaseapp.com",
+            projectId: "ci60-83c0d",
+            storageBucket: "ci60-83c0d.appspot.com",
+            messagingSenderId: "547691425650",
+            appId: "1:547691425650:web:10daa82e0033cf3208f7eb"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
 
     <script src="./js/app.js" type="module"></script>
     <script src="./js/gameUploadReader.js"></script>

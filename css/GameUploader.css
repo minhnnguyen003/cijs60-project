@@ -1,0 +1,32 @@
+.game-uploader {
+    display: none;
+    width: 100%;
+}
+
+#uploader {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 50%;
+    margin: 0 0 10px 0;
+}
+
+.game-properties
+{
+    margin-bottom: 20px;
+    display: flex;
+    width: 50%;   
+    justify-content: space-between;
+    align-items: center;
+}
+
+#game-name {
+    border: 1px solid #0078D7;
+    border-radius: 8px;
+    min-height: 30px;
+    width: 60%;
+    padding: 0 0 0 3px;
+}
+
+#folder-picker {
+ width: 30% !important;   
+}
