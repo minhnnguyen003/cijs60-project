@@ -25,7 +25,7 @@ const setupComment = (data) => {
     commentList.innerHTML = html;
 }
 
-db.collection('comment').orderBy('created').get().then(snapshot => {
+db.collection('comment').orderBy('created').onSnapshot(snapshot => {
     setupComment(snapshot.docs);
 
 })
@@ -38,8 +38,7 @@ createForm.addEventListener('submit', (e) => {
         comment: createForm['comment'].value,
         created: firebase.firestore.FieldValue.serverTimestamp()
     })
-    alert("comment  success")
-    setTimeout(function() { window.location.reload(); }, 500);
+
 
 
 })
