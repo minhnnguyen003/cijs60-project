@@ -17,7 +17,7 @@
 
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
-    <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=0.5, user-scalable=no, minimal-ui">
     <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-firestore.js"></script>
@@ -34,7 +34,6 @@
         </div>
 
         <div class="above-game">
-            <p class="game-intro">Join the numbers and get to the <strong>2048 tile!</strong></p>
             <a class="restart-button">New Game</a>
         </div>
 
@@ -79,10 +78,10 @@
             </div>
         </div>
 
-        <p class="game-explanation">
+        <!-- <p class="game-explanation">
             <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same number touch, they <strong>merge into one!</strong>
         </p>
-        <hr>
+        <hr> -->
 
 
     </div>
@@ -92,21 +91,18 @@
     <script>
         // Your web app's Firebase configuration
         var firebaseConfig = {
-            apiKey: "AIzaSyCsE2VbHau3ufwGPrpQbr0Hz9-CtWLbIew",
-            authDomain: "ci60-ed21a.firebaseapp.com",
-            projectId: "ci60-ed21a",
-            storageBucket: "ci60-ed21a.appspot.com",
-            messagingSenderId: "206334307213",
-            appId: "1:206334307213:web:8405063f73a3f768436bc4"
-        };
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
+        apiKey: "AIzaSyDkZSoFiw1bQYN4Nx7NXfg8Ln12T-AI6F4",
+        authDomain: "ci60-83c0d.firebaseapp.com",
+        projectId: "ci60-83c0d",
+        storageBucket: "ci60-83c0d.appspot.com",
+        messagingSenderId: "547691425650",
+        appId: "1:547691425650:web:10daa82e0033cf3208f7eb"
+    };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
         const auth = firebase.auth();
         const db = firebase.firestore();
     </script>
-    <script src="../2048/js/commentBox.js" type="module"></script>
-    <script src="../2048/js/commentList.js" type="module"></script>
-    <script src="../2048/js/auth.js" type="module"></script>
     <script src="./js/bind_polyfill.js"></script>
     <script src="./js/classlist_polyfill.js"></script>
     <script src="./js/animframe_polyfill.js"></script>

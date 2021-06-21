@@ -16,3 +16,15 @@ export async function login(email, password){
         alert(error.message)
     }
 }
+
+export async function authStateChanged() {
+    firebase.auth().onAuthStateChanged((user) => {
+        if(user != null)
+        {
+            let uid = user.uid;
+        }
+        else {
+            window.location = "./signin.html";
+        }
+    });
+}

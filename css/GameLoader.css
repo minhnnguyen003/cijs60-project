@@ -1,0 +1,11 @@
+.game-loader {
+    margin: auto;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    background-color: #EDE2E0;
+}
+
+.game-properties {
+    display: block;
+}

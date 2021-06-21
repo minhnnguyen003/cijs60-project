@@ -1,4 +1,4 @@
-import {login} from "../user.js"
+import {login} from "../models/user.js"
 
 const $template = document.createElement('template')
 $template.innerHTML = `

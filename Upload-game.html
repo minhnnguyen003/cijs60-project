@@ -8,18 +8,11 @@
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
+<body class="background-2">
     <nav-bar></nav-bar>
 
     <section class="main">
-        <div class="container" style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
-            <div class="game-properties">
-                <h6>Enter your game name</h6>
-                <input type="text" id="game-name" name="game-name">
-            </div>
-                <progress value="0" max="100" id="uploader" class="game-uploader">0%</progress>
-                <input type="file" name="game-folder" id="folder-picker" class="game-uploader" webkitdirectory multiple>
-        </div>
+        <game-upload></game-upload>
     </section>
 
     <script src="https://www.gstatic.com/firebasejs/8.6.4/firebase-app.js"></script>
@@ -42,6 +35,5 @@
     </script>
 
     <script src="./js/app.js" type="module"></script>
-    <script src="./js/gameUploadReader.js"></script>
 </body>
 </html>
